@@ -6,7 +6,9 @@ Added comments and prints to
 **Compile otccelfn.c:**
 ```
 # CentOS 7
-yum install -y libgcc.i686 libgcc.x86_64
+yum install -y glibc-devel glibc-devel.i686
+
+yum install -y libgcc.x86_64 libgcc.i686
 
 gcc -m32 -march=i386 -O2 -w src/otccelfn.c -o otccelfn
 ```
